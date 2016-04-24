@@ -1,0 +1,129 @@
+@charset "utf-8";
+/*!
+ * screen.scss ------------ 站点scss文件
+ *
+ * variables -------------- 变量集中存储文件
+ *
+ * mixin ------------------ mixin集中存储文件
+ */
+@import "variables", "mixin";
+@import "compass/css3";
+@import "compass/typography";
+// @debug browsers();/* 查看浏览器兼容范围 */
+// $supported-browsers: chrome,firefox;
+$browser-minmum-versions:("ie":"8");
+// @debug omitted-usage("ie","6");
+
+// 单行注释
+/* 这里的注释编译后不会消失 */
+.item {
+  font:{
+    family:"Microsoft YaHei";
+    size:18rem;
+  }
+  color:$color-danger;
+  @include box-shadow(1px 1px 3px 4px #ccc);
+}
+.inline-block {
+  @include inline-block();
+}
+.opacity {
+  @include opacity(.8);
+}
+.link-color {
+  @include link-colors(#00c, #0cc, #c0c, #ccc, #cc0);
+}
+.hover-link {
+  @include hover-link();
+}
+.unstyled-link {
+  @include unstyled-link();
+}
+.no-bullets {
+  @include no-bullets();
+}
+.no-bullet {
+  @include no-bullet();
+}
+.force-wrap {
+  @include force-wrap();
+}
+.nowrap {
+  @include nowrap();
+}
+// compass install compass/ellipsis
+$use-mozilla-ellipsis-binding: true;
+.ellipsis {
+  @include ellipsis();
+}
+// 隐藏文字
+.hide-text {
+  @include hide-text();
+}
+.squish-text {
+  @include squish-text();
+}
+// http://cdn.qq.com/images.find-btn.png
+.replace-text {
+  @include replace-text("http://cdn.qq.com/images.find-btn.png");
+}
+// 基准高 16 * 1.5 24px
+$base-font-size:16px;
+$base-line-height:24px;
+// @include establish-baseline();
+// 基准线图片
+// body {
+//   @include debug-vertical-alignment();
+// }
+
+h1 {
+  @include adjust-font-size-to(48px);
+}
+h2 {
+  @include adjust-font-size-to(36px);
+}
+h3 {
+  @include adjust-font-size-to(24px);
+}
+h4 {
+  @include adjust-font-size-to(21px);
+}
+h5 {
+  @include adjust-font-size-to(18px);
+}
+h6 {
+  @include adjust-font-size-to(16px);
+}
+p {
+  @include adjust-font-size-to(16px);
+  @include leader();
+  @include trailer(2);
+}
+
+.logo {
+  // background-image:inline-image("ionic.png");
+}
+.logo-A {
+  // background-image:image-url("ionic.png");
+}
+
+// 组合选择器
+#{append-selector("p,span,div",".bar")}{
+  color:#000;
+}
+
+.clearfix {
+  @include legacy-pie-clearfix();
+}
+
+.pull-left {
+  @include float-left();
+}
+
+.need-has-layout {
+  @include has-layout();
+}
+
+// .underscore-hack-display {
+//   @include underscore-hack(display,block,inline);
+// }

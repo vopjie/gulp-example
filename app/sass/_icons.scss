@@ -1,0 +1,29 @@
+@charset "utf-8";
+// // 1，PC网站合图
+// // 布局方式：vertical、horizontal、diagonal和smart。默认排列方式是vertical。
+// // $icon-layout:smart;
+// // 设置smart后，设置间距将失效
+// $icon-spacing: 1px;
+// $icon-sprite-dimensions:"true";
+// @import "compass/utilities/sprites";
+// @import "icon/*.png";
+// @include all-icon-sprites();
+// // 手动设置类名
+// .icon-phone {
+//   @include icon-sprite(phone);
+// }
+
+// 2，H5合图
+$icons: sprite-map("icon/*.png", $spacing: 1px);
+$imgWidth: 130px;
+$imgHeight: 261px;
+// .phone {@include sprites($icons, phone);}
+
+// // 3，H5视网膜合图
+// @import "retina-sprites";
+// $sprites:sprite-map("retina-version/sprites/*.png");
+// $sprites2x:sprite-map("retina-version/sprites-retina/*.png");
+// // 手动设置类名,参数带true,将生成hover样式
+// .icon-calendar {
+//   @include retina-sprite(calendar,true);
+// }

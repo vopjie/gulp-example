@@ -1,0 +1,19 @@
+@charset "utf-8";
+// host
+$host:"http://www.baidu.com";
+
+// color
+$color_base : #333;//黑色
+$color_primary : #286090;//浅蓝色
+$color_success : #5cb85c;//绿色
+$color_info : #5bc0de;//天蓝色
+$color_warning : #f0ad4e;//黄色
+$color_danger : #d9534f;//红色
+$color_grey : #eee;
+
+// 预设颜色通用类名
+.color_primary {color:$color_primary;}
+.color_success {color:$color_success;}
+.color_info {color:$color_info;}
+.color_warning {color:$color_warning;}
+.color_danger {color:$color_danger;}

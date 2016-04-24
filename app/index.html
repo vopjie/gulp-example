@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>H5高清，多屏适配</title>
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <!-- <link rel="apple-touch-icon" href="favicon.png"> -->
+        <!-- <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon"> -->
+        <!-- <meta content="designWidth=750, desginUnit=6, columnCount=12, columnXUnit=7, gutterXUnit=3, edgeXUnit=4" name="grid" /> -->
+
+        <link rel="stylesheet" href="css/style.css">
+        <script src="farmwork/flexible/flexible.js"></script>
+
+        <!-- flexible css reset -->
+        <!-- <script src="farmwork/flexible/flexible_css.js"></script> -->
+        <!-- flexible栅格系统 -->
+        <!-- <meta content="modeName=750-12" name="grid" /> -->
+        <!-- <script src="farmwork/flexible/makegrid.js"></script> -->
+        <style>
+            .grid > div { margin-bottom: 0.3rem; text-align: center; color: #fff; background-color: rgba(96, 125, 255, 0.85); height: .75rem;line-height:0.75rem;}
+            .grid-wrap { position: relative; background-color: rgba(241, 149, 36, 0.2); background-color: rgba(0, 0, 0, 0.05); padding-top: 0.3rem; }
+            .grid-wrap .bg { position: absolute; z-index: -1; top: 0; left: 0;height: 100%;}
+            .grid-wrap .bg > div[class^="col-"] {height: 100%;background-color: rgba(0, 0, 0, 0.15);}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">
+                <i class="phone"></i>
+                <h1>客服电话</h1>
+                <p>400-123-8956</p>
+            </div>
+            <div class="item">
+                <i class="email"></i>
+                <h1>客服邮箱</h1>
+                <p>kefu@longchengjinfu.com</p>
+            </div>
+            <div class="info">
+                <p>（服务时间为工作日09：00-18：00）</p>
+                <p>上海市黄浦区徐家汇路555号广发银行大厦21楼A座</p>
+            </div>
+        </div>
+        <img class="logo" src="images/logo.png" alt="">
+        <!-- grid -->
+        <div class="grid-wrap" style="display:none">
+            <div class="grid">
+                <div class="col-2">c-2</div>
+                <div class="col-2">c-2</div>
+                <div class="col-2">c-2</div>
+                <div class="col-2">c-2</div>
+                <div class="col-2">c-2</div>
+                <div class="col-2">c-2</div>
+            </div>
+            <div class="grid">
+                <div class="col-3">c-3</div>
+                <div class="col-3">c-3</div>
+                <div class="col-3">c-3</div>
+                <div class="col-3">c-3</div>
+            </div>
+
+            <div class="grid">
+                <div class="col-4">c-4</div>
+                <div class="col-4">c-4</div>
+                <div class="col-4">c-4</div>
+            </div>
+
+            <div class="grid">
+                <div class="col-6">c-5</div>
+                <div class="col-6">c-5</div>
+            </div>
+
+            <div class="grid">
+                <div class="col-12">c-12</div>
+            </div>
+
+            <div class="grid">
+                <div class="col-11">c-11</div>
+                <div class="col-1">c-1</div>
+            </div>
+
+            <div class="grid">
+                <div class="col-10">c-10</div>
+                <div class="col-2">c-2</div>
+            </div>
+
+            <div class="grid">
+                <div class="col-5">c-5</div>
+                <div class="col-5">c-5</div>
+                <div class="col-2">c-2</div>
+            </div>
+            <div class="grid">
+                <div class="col-9">c-9</div>
+                <div class="col-3">c-3</div>
+            </div>
+            <div class="grid">
+                <div class="col-8">c-8</div>
+                <div class="col-4">c-4</div>
+            </div>
+            <div class="grid">
+                <div class="col-7">c-7</div>
+                <div class="col-5">c-5</div>
+            </div>
+            <div class="grid bg">
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </body>
+</html>

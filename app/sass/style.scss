@@ -1,0 +1,28 @@
+@charset "utf-8";
+// flexible css reset
+@import "variables", "mixin","common";
+// @import "normalize";
+@import "icons";
+html {background-color: #f5f5f5;}
+body {margin:0 auto;min-height: 100vh;position: relative;font-family: "Microsoft Yahei";}
+i {display: inline-block;}
+.container {margin-top: 20px;background: #fff;padding:0 40px;border-color:$color_grey;border-style:solid;border-width: 1px 0 1px 0;/* no */
+    .item {padding: 48px 0;color:#505050;text-align: center;border-bottom: 1px solid $color_grey;/* no */
+        i {margin:0 0 20px;}
+        .phone,.email { @include flip();}
+        h1 {margin-bottom: 10px;@include px2px(font-size,38);}
+        p {@include px2px(font-size,30);}
+    }
+    .info {padding: 44px 0;text-align: center;
+        p {color:#505050;@include px2px(font-size,24);@include px2px(line-height,32);margin: 4px 0;/*no*/}
+    }
+}
+.logo {width: 360px;height: 148px;margin:130px auto;display:block;}
+
+// 循环引用@mixin sprites() 生成icon
+@each $icon in phone, email {
+  .#{$icon} {
+    @include sprites($icons, #{$icon});
+  }
+}
+

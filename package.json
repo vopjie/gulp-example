@@ -1,0 +1,30 @@
+{
+  "name": "plugins",
+  "description": "gulp自动化依赖插件",
+  "version": "0.1.0",
+  "author": "jiezhiyong",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-cache": "*",
+    "gulp-compass": "",
+    "gulp-concat": "*",
+    "gulp-csslint": "*",
+    "gulp-htmlhint": "*",
+    "gulp-jshint": "*",
+    "gulp-minify-css": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",
+    "gulp-load-plugins": "*",
+    "gulp-postcss": "*",
+    "postcss-px2rem": "*",
+    "gulp-watch": "*",
+    "autoprefixer": "*",
+    "css-mqpacker": "*",
+    "csswring": "*",
+    "gulp-imagemin": "*",
+    "imagemin-pngquant": "*",
+    "imagemin-jpegtran": "*",
+    "imagemin-gifsicle": "*"
+  }
+}
